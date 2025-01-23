@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+name = FastAPI()
 
-app=FastAPI()
-
-@app.get("/")
+@name.get("/")
 def read_root():
   return {"hello":"Shakir"}
+
